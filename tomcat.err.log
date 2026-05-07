@@ -1,0 +1,10 @@
+Apr 02, 2026 8:44:23 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Apr 02, 2026 8:44:23 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Apr 02, 2026 8:44:23 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+Apr 02, 2026 8:44:31 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [328] milliseconds.
+Apr 02, 2026 8:44:31 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]

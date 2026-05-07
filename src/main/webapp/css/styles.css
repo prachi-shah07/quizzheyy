@@ -1,0 +1,266 @@
+:root {
+    --bg: #f5f1ea;
+    --panel: #fffdf9;
+    --panel-strong: #ffffff;
+    --text: #1f2430;
+    --muted: #5d6472;
+    --primary: #12664f;
+    --secondary: #d8a31a;
+    --border: #ded6ca;
+    --danger: #a53737;
+    --success: #1f7a4c;
+    --shadow: 0 14px 35px rgba(31, 36, 48, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background:
+        radial-gradient(circle at top right, rgba(216, 163, 26, 0.15), transparent 25%),
+        linear-gradient(180deg, #fdf8f1 0%, #f5f1ea 100%);
+    color: var(--text);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.page-shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 32px 20px 48px;
+}
+
+.auth-shell {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+.auth-panel {
+    width: min(100%, 460px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 253, 249, 0.98));
+}
+
+.topbar,
+.card-grid,
+.actions,
+.stack,
+.question-meta,
+.tag-group {
+    display: flex;
+    gap: 16px;
+}
+
+.topbar {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-bottom: 24px;
+}
+
+.stat-card h2 {
+    margin: 10px 0 6px;
+    font-size: 2rem;
+}
+
+.eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    color: var(--secondary);
+    margin-bottom: 6px;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.form-grid {
+    display: grid;
+    gap: 16px;
+    margin: 24px 0 16px;
+}
+
+label {
+    font-weight: 600;
+    display: grid;
+    gap: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button.primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+.button.secondary {
+    background: #f3e8c6;
+    color: #6c4b00;
+}
+
+.button.ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.message {
+    border-radius: 14px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+}
+
+.message.error {
+    background: rgba(165, 55, 55, 0.10);
+    color: var(--danger);
+}
+
+.message.success {
+    background: rgba(31, 122, 76, 0.10);
+    color: var(--success);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    text-align: left;
+    padding: 14px 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.question-card {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 18px;
+    background: var(--panel-strong);
+}
+
+.question-step {
+    display: none;
+}
+
+.question-step.active-question {
+    display: block;
+}
+
+.question-meta {
+    flex-wrap: wrap;
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-bottom: 12px;
+}
+
+.option-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background: #fbf8f3;
+}
+
+.timer-box {
+    min-width: 140px;
+    text-align: center;
+}
+
+.tag-group {
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #eef6f2;
+    color: var(--primary);
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.status-good {
+    color: var(--success);
+    font-weight: 700;
+}
+
+.status-bad {
+    color: var(--danger);
+    font-weight: 700;
+}
+
+.recommendation-list {
+    margin: 0;
+    padding-left: 20px;
+    display: grid;
+    gap: 12px;
+}
+
+.quiz-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .page-shell {
+        padding: 20px 14px 32px;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+    }
+}

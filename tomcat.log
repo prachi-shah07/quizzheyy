@@ -1,0 +1,12 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.quizapp:ai-personalized-quiz-system >---------------
+[INFO] Building ai-personalized-quiz-system 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- tomcat7:2.2:run-war-only (default-cli) @ ai-personalized-quiz-system ---
+[INFO] Running war on http://localhost:8080/ai-personalized-quiz-system
+[INFO] Using existing Tomcat server configuration at C:\Users\inder\OneDrive\Documents\New project\target\tomcat
+[INFO] create webapp with contextPath: /ai-personalized-quiz-system
